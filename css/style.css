@@ -1,0 +1,22 @@
+:root {
+  --color1: #bc908f;
+  --color2: #b59c7c;
+  --color3: #bcb78e;
+  --color4: #d8d8bc;
+  --color5: #f6f6ed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset específico para body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;        /* altura de línea legible */
+
+}

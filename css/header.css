@@ -43,12 +43,14 @@
 }
 
 .navbar.scrolled .logo img {
-  height: 2.5rem;
+  height: 3.4rem;
   transition: ease-in-out 0.2s;
 }
 
 .navbar.scrolled .nav-links li a {
   color: var(--color5);
+  font-size: 0.9rem;
+  transition: ease-in-out 03s;
 }
 
 .navbar.scrolled .social-icons a {
@@ -79,7 +81,7 @@
   text-decoration: none;
   color: var(--color5);
   font-weight: 600;
-  transition: color 0.3s ease;
+  transition: ease-in-out 0.2s;
 }
 
 .nav-links li a:hover {

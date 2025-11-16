@@ -1,67 +1,302 @@
-.about-section {
-    background-color: var(--color5); /* fondo claro elegante */
-    padding: 4rem 2rem;
+.place-section {
+
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center !important;
+  padding: 5rem 4rem;
+  text-align: center;
+  
+}
+.place-section-container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Texto */
+.place-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.place-text .title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--color1);
+  margin-bottom: 0.5rem;
+}
+
+.place-text .subtitle {
+  font-size: 1.6rem;
+  color: var(--color2);
+  margin-bottom: 1.5rem;
+}
+
+.place-text .description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color2);
+  width: 70%;
+}
+
+.place-text .accent {
+  font-weight: bold;
+  color: var(--color2);
+}
+
+/* Galería */
+.place-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  padding-top: 5%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 50%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.awards-subs{
+  color: var(--color2);
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+/* Premios */
+.awards-section {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.awards-title {
+  font-size: 1.8rem;
+  color: var(--color1);
+  
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card base */.awards-section {
+  background-color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/* Card reseñas */
+.reviews-card {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(188, 183, 142, 0.3);
+  border-radius: 12px;
+  padding: 2rem;
+  backdrop-filter: blur(8px);
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.reviews-card .stars {
+  font-size: 0.9rem; /* estrellas más pequeñas */
+  color: gold;
+  margin-bottom: 0.5rem;
+}
+
+.reviews-card h4 {
+  font-size: 1.2rem;
+  color: var(--color1);
+  margin-bottom: 0.3rem;
+}
+
+.reviews-card p {
+  font-size: 0.85rem;
+  color: var(--color2);
+}
+
+.reviews-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.85rem;
+  background-color: var(--color1);
+  color: var(--color5);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.reviews-button:hover {
+  background-color: var(--color2);
+  transform: translateY(-2px);
+}
+
+/* Premios */
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.award-card {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(188, 183, 142, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.award-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+/* Card reseñas */
+.award-card.reviews {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(188, 183, 142, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.reviews-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.reviews-header i {
+  font-size: 2rem;
+  color: gold;
+  flex-shrink: 0;
+}
+
+.reviews-info .score {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: goldenrod;
+  margin: 0;
+}
+
+.reviews-info .status {
+  font-size: 1.2rem;
+  color: var(--color1);
+  margin: 0.2rem 0;
+}
+
+.reviews-info .opinions {
+  font-size: 0.95rem;
+  color: var(--color2);
+  margin: 0.2rem 0;
+}
+
+.reviews-info .recommend {
+  font-size: 0.9rem;
+  color: var(--color3);
+  margin: 0.2rem 0;
+}
+
+.award-card.reviews .source {
+  font-size: 0.8rem;
+  color: var(--color2);
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.award-card i {
+  font-size: 1.6rem;
+  color: goldenrod;
+  margin-bottom: 0.5rem;
+}
+
+.award-card h4 {
+  font-size: 1rem;
+  color: goldenrod;
+  margin-bottom: 0.3rem;
+}
+
+.award-card p {
+  font-size: 0.85rem;
+  color: var(--color2);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .awards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+/* Responsivo */
+@media (max-width: 992px) {
+  .place-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .lightbox-content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    border-radius: 10px;
   }
   
-  .about-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+}
+
+@media (max-width: 600px) {
+  .place-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
     align-items: center;
-    padding: 0rem 5rem;
   }
-  
-  .about-text h2 {
-    font-size: 2.4rem;
-    color: var(--color2);
-    margin-bottom: 1rem;
-  }
-  
-  .about-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: var(--color2);
-    margin-bottom: 2rem;
-  }
-  
-  .about-button {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: var(--color3);
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .about-button:hover {
-    background-color: var(--color2);
-    transform: translateY(-2px);
-  }
-  
-  .about-image img {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease;
-  }
-  
-  .about-image img:hover {
-    transform: scale(1.03);
-  }
-  
-  /* Responsivo */
-  @media (max-width: 768px) {
-    .about-container {
-      grid-template-columns: 1fr;
-      text-align: center;
-    }
-  
-    .about-text {
-      margin-bottom: 2rem;
-    }
-  }
-  
+}

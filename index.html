@@ -9,8 +9,9 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/heroSlide.css">
-  <link rel="stylesheet" href="css/premios.css">
   <link rel="stylesheet" href="css/about-index.css">
+  <link rel="stylesheet" href="css/space-index.css">
+  <link rel="stylesheet" href="css/servicios-index.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
@@ -37,73 +38,133 @@
     </div>
   </section> 
 
-
-
-  
-
-
   <!-- Main Content -->
   <main>
-    <section class="awards-section">
-      <div class="awards-container">
-        <div class="awards-grid">
-          <div class="award-card pastel5 reviews-card">
-            <div class="award-icon"><i class="fas fa-star"></i></div>
-            <h3>Recomendado</h3>
-            <p>+39 reseñas</p>
-            <div class="stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <p>casamientos.com.ar</p>
-          </div>
-          <div class="award-card">
-            <div class="award-icon"><i class="fas fa-trophy"></i></div>
-            <h3>Wedding Awards 2022</h3>
-            <p>casamientos.com.ar</p>
-          </div>
-          <div class="award-card">
-            <div class="award-icon"><i class="fas fa-trophy"></i></div>
-            <h3>Wedding Awards 2023</h3>
-            <p>casamientos.com.ar</p>
-          </div>
-          <div class="award-card">
-            <div class="award-icon"><i class="fas fa-trophy"></i></div>
-            <h3>Wedding Awards 2024</h3>
-            <p>casamientos.com.ar</p>
-          </div>
-          <div class="award-card">
-            <div class="award-icon"><i class="fas fa-trophy"></i></div>
-            <h3>Wedding Awards 2025</h3>
-            <p>casamientos.com.ar</p>
-          </div>
+    
+    <section class="place-section">
+      <div class="place-section-container">
+        <!-- Texto -->
+        <div class="place-text">
+          <h2 class="title">Campo Lobos Eventos</h2>
+          <h3 class="subtitle">Tranquilidad · Naturaleza · Originalidad</h3>
+          <p class="description">
+            CampoLobos Eventos está
+            pensado para hacer de su celebración algo único y mágico. <br>
+            150 años de naturaleza rodean el salón principal para el
+            deleite de sus ojos.
+            
+          </p>
         </div>
+      
+        <!-- Galería -->
+        <div class="place-gallery">
+          <div class="gallery-item"><img src="assets/campolobos1.jpg" alt="Vista principal" /></div>
+          <div class="gallery-item"><img src="assets/campolobos2.jpg" alt="Naturaleza" /></div>
+          <div class="gallery-item"><img src="assets/campolobos3.jpg" alt="Eventos" /></div>
+          <div class="gallery-item"><img src="assets/campolobos4.jpg" alt="Detalles" /></div>
+        </div>
+      
+        <!-- Modal Lightbox -->
+        <div id="lightbox" class="lightbox">
+          <span class="close">&times;</span>
+          <img class="lightbox-content" id="lightbox-img" />
+        </div>        
       </div>
     </section>
 
-    <section class="about-section">
-      <div class="about-container">
-        <!-- Texto -->
-        <div class="about-text">
-          <h2>Campo Lobos</h2>
-          <p>
-            <strong>Tranquilidad, naturaleza y originalidad</strong> son las tres palabras que definen esta estancia. <br>
-            CampoLobos Eventos está pensado para hacer de su celebración algo único y mágico. <br>
-            <strong>150 años de naturaleza rodean el salón principal para el deleite de sus ojos.</strong>
-          </p>
-          <a href="nosotros.html" class="about-button">Ver más información</a>
+    
+    <section class="spaces-section">
+      <div class="spaces-container">
+        <h2 class="spaces-title">Espacios y capacidades</h2>
+        <h3 class="spaces-subs">Pensado para albergar celebraciones tanto interiores como exteriores.</h3>
+    
+        <div class="spaces-details">
+          <!-- Card exteriores -->
+          <div class="space-item">
+            <div class="space-image">
+              <img src="assets/afuera.jpg" alt="Celebraciones exteriores CampoLobos" />
+            </div>
+            <div class="space-content">
+              <h3>Celebraciones exteriores</h3>
+              <p>
+                CampoLobos ofrece un entorno natural con sofisticada red de alumbrado, ideal para enlaces de día o de noche.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Card interiores -->
+          <div class="space-item">
+            <div class="space-image">
+              <img src="assets/salon.jpg" alt="Salón interior CampoLobos" />
+            </div>
+            <div class="space-content">
+              <h3>Salón interior</h3>
+              <p>
+                Salón de 350 m² con capacidad máxima de 300 invitados, vidrios panorámicos y estructura de hierro inglés.
+              </p>
+            </div>
+          </div>
         </div>
     
-        <!-- Imagen -->
-        <div class="about-image">
-          <img src="assets/premios.jpg" alt="Campo Lobos Eventos" />
-        </div>
+        <a href="espacios.html" class="spaces-button">Ver más información</a>
       </div>
     </section>
     
+
+    <section class="services-section">
+      <div class="services-container">
+        <h2 class="services-title">Servicios</h2>
+        <p class="services-intro">
+          CampoLobos puede gestionar todos los servicios para la realización integral de eventos empresariales y sociales.
+        </p>
+    
+        <div class="services-grid">
+          <!-- Servicio 1 -->
+          <div class="service-card">
+            <img src="assets/servicios/catering.jpg" alt="Catering" />
+            <h3>Catering internacional y criollo</h3>
+            <p>Opciones gourmet, étnicas y al asador criolla para cada celebración.</p>
+          </div>
+    
+          <!-- Servicio 2 -->
+          <div class="service-card">
+            <img src="assets/servicios/deco.jpg" alt="Ambientación" />
+            <h3>Ambientación de espacios</h3>
+            <p>Diseños únicos que transforman cada ambiente en un escenario inolvidable.</p>
+          </div>
+    
+          <!-- Servicio 3 -->
+          <div class="service-card">
+            <img src="assets/servicios/musico.jpg" alt="Musicalización" />
+            <h3>Musicalización</h3>
+            <p>Bandas y DJs profesionales para acompañar cada momento de la fiesta.</p>
+          </div>
+    
+          <!-- Servicio 4 -->
+          <div class="service-card">
+            <img src="assets/servicios/fotografo.jpg" alt="Fotografía" />
+            <h3>Fotografía y filmación</h3>
+            <p>Captura de cada instante con equipos y profesionales de primer nivel.</p>
+          </div>
+    
+          <!-- Servicio 5 (opcional) -->
+          <div class="service-card">
+            <img src="assets/servicios/planning.jpg" alt="Wedding Planner" />
+            <h3>Wedding Planner</h3>
+            <p>Diseño, coordinación y supervisión integral del evento.</p>
+          </div>
+    
+          <!-- Servicio 6 (opcional) -->
+          <div class="service-card">
+            <img src="assets/servicios/tragos.jpg" alt="Barra de tragos" />
+            <h3>Barra de tragos</h3>
+            <p>Cócteles clásicos y modernos preparados por bartenders profesionales.</p>
+          </div>
+        </div>
+    
+        <a href="servicios.html" class="services-button">Ver todos los servicios</a>
+      </div>
+    </section>
     
     
     

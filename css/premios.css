@@ -1,92 +1,84 @@
-.awards-section {
-    background: linear-gradient(135deg, var(--color1), var(--color2)); /* contraste elegante */
-    background-image: url(/assets/opiniones.jpg);
-    padding: 4rem 2rem;
-    text-align: center;
-  }
-  
-  .awards-container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .awards-title {
-    font-size: 2.2rem;
-    color: var(--color5);
-    margin-bottom: 2rem;
-  }
-  
-  .awards-row {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
+.awards-section-awards {
+  background-color: var(--color5); /* fondo claro */
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.container-awards {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title-awards {
+  font-size: 2rem;
+  color: var(--color1); /* texto oscuro */
+  margin-bottom: 2.5rem;
+}
+
+.cards-awards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card-awards {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  width: 200px;
+  min-height: 180px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* contenido centrado horizontal */
+  justify-content: center; /* contenido centrado vertical */
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-awards:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.icon-awards {
+  font-size: 2rem;
+  color: goldenrod;
+  margin-bottom: 0.8rem;
+}
+
+.card-title-awards {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color1);
+  margin-bottom: 0.5rem;
+}
+
+.card-text-awards {
+  font-size: 0.9rem;
+  color: var(--color1);
+  margin-bottom: 0.5rem;
+}
+
+.card-source-awards {
+  font-size: 0.75rem;
+  color: var(--color3);
+  margin-top: auto; /* siempre al pie */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards-awards {
     gap: 1rem;
-    flex-wrap: wrap; /* responsive */
   }
-  
-  /* Card base */
-  .award-card {
-    flex: 1 1 160px; /* cards más pequeños */
-    max-width: 200px;
-    background: rgba(255, 255, 255, 0.15); /* glassmorphism */
-    border-radius: 12px;
-    padding: 1rem;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    color: var(--color5);
+  .card-awards {
+    width: 45%;
   }
-  
-  .award-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 480px) {
+  .card-awards {
+    width: 100%;
   }
-  
-  .award-card i {
-    color: goldenrod;
-    font-size: 1.4rem;
-  }
-  
-  .award-card span {
-    font-size: 0.95rem;
-    font-weight: 500;
-  }
-  
-  .award-card .source {
-    font-size: 0.75rem;
-    color: var(--color3);
-    margin-top: auto; /* siempre al pie */
-  }
-  
-  /* Reseñas card */
-  .award-card.reviews {
-    font-weight: bold;
-  }
-  
-  .reviews-text {
-    font-size: 0.9rem;
-    color: var(--color5);
-    text-align: center;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .awards-row {
-      justify-content: center;
-    }
-    .award-card {
-      flex: 1 1 45%;
-      max-width: none;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .award-card {
-      flex: 1 1 100%;
-    }
-  }
-  
+}

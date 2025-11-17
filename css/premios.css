@@ -1,0 +1,92 @@
+.awards-section {
+    background: linear-gradient(135deg, var(--color1), var(--color2)); /* contraste elegante */
+    background-image: url(/assets/opiniones.jpg);
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .awards-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .awards-title {
+    font-size: 2.2rem;
+    color: var(--color5);
+    margin-bottom: 2rem;
+  }
+  
+  .awards-row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    flex-wrap: wrap; /* responsive */
+  }
+  
+  /* Card base */
+  .award-card {
+    flex: 1 1 160px; /* cards más pequeños */
+    max-width: 200px;
+    background: rgba(255, 255, 255, 0.15); /* glassmorphism */
+    border-radius: 12px;
+    padding: 1rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: var(--color5);
+  }
+  
+  .award-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  }
+  
+  .award-card i {
+    color: goldenrod;
+    font-size: 1.4rem;
+  }
+  
+  .award-card span {
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  
+  .award-card .source {
+    font-size: 0.75rem;
+    color: var(--color3);
+    margin-top: auto; /* siempre al pie */
+  }
+  
+  /* Reseñas card */
+  .award-card.reviews {
+    font-weight: bold;
+  }
+  
+  .reviews-text {
+    font-size: 0.9rem;
+    color: var(--color5);
+    text-align: center;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .awards-row {
+      justify-content: center;
+    }
+    .award-card {
+      flex: 1 1 45%;
+      max-width: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .award-card {
+      flex: 1 1 100%;
+    }
+  }
+  

@@ -12,6 +12,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+a{
+  color: inherit;
+}
 
 /* Container para limitar ancho */
 .container {
@@ -30,27 +33,26 @@
   width: 100%;
   backdrop-filter: blur(1px);
   z-index: 1000;
-  transition: all 0.3s ease;
   padding: 1rem 0;
   background-color: transparent;
 }
 
 .navbar.scrolled {
   padding: 0.5rem 0;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.646);
   backdrop-filter: blur(4px);
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .navbar.scrolled .logo img {
   height: 3.4rem;
-  transition: ease-in-out 0.2s;
+  
 }
 
 .navbar.scrolled .nav-links li a {
   color: var(--color5);
   font-size: 0.9rem;
-  transition: ease-in-out 03s;
+  
 }
 
 .navbar.scrolled .social-icons a {
@@ -81,10 +83,10 @@
   text-decoration: none;
   color: var(--color5);
   font-weight: 600;
-  transition: ease-in-out 0.2s;
+  
 }
-
-.nav-links li a:hover {
+.navbar.scrolled
+.nav-links li a:hover, .nav-links li a:hover  {
   color: var(--color2);
 }
 

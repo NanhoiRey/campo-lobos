@@ -1,0 +1,74 @@
+.faq-section-faq {
+    background-color: var(--color5); /* fondo claro */
+    color: var(--color1);            /* textos oscuros */
+    padding: 4rem 2rem;
+  }
+  
+  .container-faq {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .title-faq {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color1);
+  }
+  
+  .accordion-faq {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .accordion-item-faq {
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(0,0,0,0.02); /* fondo muy suave */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* sombra ligera en lugar de borde oscuro */
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .accordion-item-faq:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12); /* efecto hover */
+  }
+  
+  .accordion-header-faq {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    color: var(--color1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-header-faq:hover {
+    background-color: rgba(0,0,0,0.05); /* efecto hover en el header */
+  }
+  
+  .accordion-header-faq .icon-faq {
+    transition: transform 0.3s ease;
+    color: var(--color1);
+  }
+  
+  .accordion-content-faq {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.3s ease;
+    padding: 0 1.2rem;
+    color: var(--color1);
+  }
+  
+  .accordion-content-faq.open-faq {
+    max-height: 600px; /* suficiente para contenido */
+    opacity: 1;
+    padding: 2rem;     /* padding grande al desplegar */
+  }
+  

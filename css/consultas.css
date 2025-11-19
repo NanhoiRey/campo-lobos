@@ -2,6 +2,7 @@
     background-color: var(--color5); /* fondo claro */
     color: var(--color1);            /* textos oscuros */
     padding: 4rem 2rem;
+    font-family: "Raleway", sans-serif;
   }
   
   .container-faq {

@@ -1,125 +1,143 @@
-/* Wrapper general */
-.footer-section-footer {
-  background-color: var(--color6); /* fondo oscuro */
+.footer-section-map {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  position: relative;
+}
+
+/* Mapa ocupa todo el ancho */
+.map-container-footer {
   width: 100%;
-  color: var(--color2);
-
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  
+  height: 600px;
+  padding: 1rem 6.4rem;
+  z-index: 4000;
 }
 
-/* Contenedor en dos columnas */
-.container-footer {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 5rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.map-footer-full {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Fondo con imagen + overlay */
+.contact-overlay-footer {
+  position: relative;
+  background: url("/assets/salon-footer2.jpg") center/cover no-repeat;
+  padding: 4rem 2rem;
+}
+
+.overlay-footer {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.4));
+  z-index: 0;
+}
+
+.cards-footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
-  align-items: start;
 }
 
-/* Columna izquierda */
-.left-footer {}
-
-.brand-title-footer {
-  font-size: 1.6rem;
-  color: var(--color1);
-  margin: 0 0 1rem 0;
-  font-weight: bold;
+.card-footer {
+  background: rgba(11, 9, 9, 0.605);
   
+  border-radius: 12px;
+  padding: 2rem;
+  width: 40%;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-.contact-list-footer {
+.card-footer h3 {
+  margin-bottom: 1rem;
+  color: var(--color5);
+}
+
+.card-footer ul {
   list-style: none;
   padding: 0;
-  margin: 0 0 1rem 0;
-  display: grid;
-  gap: 0.6rem;
+  margin: 0;
 }
 
-.contact-item-footer {
+.card-footer ul li {
+  margin: 0.5rem 0;
+}
+
+.card-footer a {
+  color: var(--color5);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card-footer a:hover {
+  color: var(--color3);
+}
+
+/* Redes sociales */
+.social-icons-footer {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  justify-content: right;
+  gap: 1rem;
 }
 
-.icon-footer {
-  color: var(--color1);
-  font-size: 1.1rem;
+.social-icons-footer a {
+  font-size: 1.5rem;
+  color: var(--color5);
+  transition: color 0.3s ease;
 }
 
-.contact-text-footer {
-  font-size: 0.95rem;
+.social-icons-footer a:hover {
+  color: var(--color3);
 }
 
-/* Botón WhatsApp */
+/* Botón WhatsApp oficial */
 .btn-whatsapp-footer {
   display: inline-block;
-  margin-top: 0.8rem;
-  padding: 0.85rem 1.4rem;
-  background-color: var(--color1); /* acento del root */
-  color: var(--color5);
+  margin-top: 1rem;
+  padding: 0.9rem 1.4rem;
+  background-color: #25D366; /* verde oficial WhatsApp */
+  color: #fff;
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
-  transition: background-color 0.25s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-whatsapp-footer:hover {
-  background-color: var(--color3);
+  background-color: #1ebe5d;
   transform: translateY(-2px);
 }
-.btn-whatsapp-footer i{
-  margin-right: 0.5rem;
 
-}
-
-/* Columna derecha (mapa) */
-.right-footer {}
-
-.map-embed-footer {
-  width: 100%;
-  height: 100%;
-  min-height: 280px;
-  border: 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.35);
-}
-
-/* Franja inferior copyright */
-.copyright-footer {
-  background-color: var(--color1);
-  width: 100%;
+/* Franja inferior */
+.copyright-footer-map {
+  background-color: #000;
   text-align: center;
   padding: 1rem;
 }
 
-.copyright-text-footer {
+.copyright-footer-map p {
   margin: 0;
-  font-size: 0.9rem;
-  color: var(--color5);
+  font-size: 0.85rem;
+  color: #fff;
 }
 
 /* Responsive */
-@media (max-width: 900px) {
-  .container-footer {
-    grid-template-columns: 1fr; /* una columna en pantallas medianas/pequeñas */
-    text-align: left;
+@media (max-width: 768px) {
+  .cards-footer {
+    flex-direction: column;
+    align-items: center;
   }
-  .right-footer {
-    margin-top: 1rem;
+  .card-footer {
+    width: 100%;
   }
-}
-
-@media (max-width: 560px) {
-  .brand-title-footer {
-    text-align: center;
-  }
-  .contact-list-footer {
-    gap: 0.5rem;
-  }
-  .container-footer {
-    text-align: center;
+  .map-container-footer {
+    width: 100%;
+    height: 600px;
+    padding:0;
+    z-index: 4000;
   }
 }

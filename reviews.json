@@ -1,0 +1,21 @@
+[
+    {
+      "nombre": "Juan",
+      "avatar": "assets/bodas/clientes/2025juan1.jpg",
+      "texto": "Nos casamos en Campo Lobos y fue todo increíble. El lugar es hermoso, con mucho verde y un salón abierto que es espectacular. La atención de Monica y su equipo fue excelente desde el primer día y todo salió perfecto. Lo recomendamos 100%.",
+      "fotos": ["assets/bodas/clientes/2025juan2.jpg", "assets/bodas/clientes/2025juan3.jpg"]
+    },
+    {
+      "nombre": "Margarita M.",
+      "avatar": "assets/bodas/clientes/2024margarita1.webp",
+      "texto": "Campolobos es el mejor lugar para una fiesta ,en nuestro caso nos casamos sin palabras… Mónica la dueña del campo es un amor , se convirtió en familia atenta a cada detalle , súper responsable siempre con un mensaje amoroso y con un abrazo cuando más lo necesitaba. Si quieren una fiesta única es acá ! No lo duden !",
+      "fotos": ["assets/bodas/clientes/2024margarita2.webp", "assets/bodas/clientes/2024margarita3.webp"]
+    },
+    {
+        
+      "nombre": "Lucía Fernández",
+      "avatar": "img/user3.jpg",
+      "texto": "La música y la iluminación hicieron que la fiesta fuera mágica. ¡Gracias CampoLobos!",
+      "fotos": ["img/review3a.jpg", "img/review3b.jpg"]
+    }
+  ]

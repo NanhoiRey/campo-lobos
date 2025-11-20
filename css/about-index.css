@@ -28,7 +28,7 @@
 
 .place-text .subtitle {
   font-size: 1.6rem;
-  color: var(--color2);
+  color: var(--color1);
   margin-bottom: 1.5rem;
 }
 
@@ -37,6 +37,7 @@
   line-height: 1.6;
   color: var(--color2);
   width: 70%;
+  font-weight: 500;
 }
 
 .place-text .accent {

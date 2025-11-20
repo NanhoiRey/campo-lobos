@@ -20,5 +20,53 @@ fetch('reviews.json')
 
       carousel.appendChild(card);
     });
+
+    // Seleccionar imágenes de reseñas después de insertarlas
+    const galleryItems = document.querySelectorAll('.shared-img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.close');
+
+    galleryItems.forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'block';
+        lightboxImg.src = img.src;
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+      }
+    });
   })
   .catch(error => console.error('Error cargando reseñas:', error));
+
+// Carrusel con botones
+// Botones carrusel
+const carousel = document.querySelector('.reviews-carousel');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+
+prevBtn.addEventListener('click', () => {
+  carousel.scrollBy({ left: -300, behavior: 'smooth' });
+});
+
+nextBtn.addEventListener('click', () => {
+  carousel.scrollBy({ left: 300, behavior: 'smooth' });
+});
+
+// Autoplay cada 5 segundos
+setInterval(() => {
+  carousel.scrollBy({ left: 300, behavior: 'smooth' });
+
+  // Si llega al final, vuelve al inicio
+  if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
+    carousel.scrollTo({ left: 0, behavior: 'smooth' });
+  }
+}, 5000);
+

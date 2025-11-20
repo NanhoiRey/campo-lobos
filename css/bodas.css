@@ -1,23 +1,22 @@
-
-
 /* Sección principal */
 .lugar-section-lugar {
   background-color: var(--color5);
   padding: 4rem 2rem;
 }
 
-.container-bodas{
+.container-bodas {
   max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 0 6rem;
+  gap: 2rem;
 }
 
-.container-lugar p {
+.container-bodas p {
   margin: 0;
   line-height: 1.6;
+  color: var(--color1);
 }
 
 .container-bodas strong {
@@ -31,13 +30,13 @@
 
 /* Galería */
 .gallery-bodas {
-  padding: 4rem 8rem;
   background-color: var(--color6);
+  padding: 4rem 2rem;
 }
 
-.title-bodas {
-  text-align: left;
-  margin-bottom: 1rem;
+.gallery-bodas .title-bodas {
+  text-align: center;
+  margin-bottom: 2rem;
   color: var(--color1);
   font-size: 2rem;
 }
@@ -45,10 +44,12 @@
 /* Masonry layout */
 .masonry-gallery {
   max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
   column-count: 3;
   column-gap: 1rem;
 }
+
 .gallery-item {
   position: relative;
   margin-bottom: 1rem;
@@ -77,7 +78,7 @@
   color: #fff;
   opacity: 0;
   transition: all 0.3s ease;
-  pointer-events: none; /* 👈 evita bloquear el click */
+  pointer-events: none;
 }
 
 .gallery-item:hover::after {
@@ -111,41 +112,43 @@
   cursor: pointer;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .masonry-gallery {
-    column-count: 2;
-  }
-}
-
-@media (max-width: 480px) {
-  .masonry-gallery {
-    column-count: 1;
-  }
-}
-
-
 /* Reseñas */
 .reviews-bodas {
-  padding: 4rem 2rem;
   background-color: var(--color5);
+  padding: 4rem 2rem;
   text-align: center;
 }
 
-.title-bodas {
+.reviews-bodas .title-bodas {
   margin-bottom: 2rem;
   color: var(--color1);
+  font-size: 2rem;
+}
+
+/* Carrusel horizontal */
+.carousel-wrapper {
+  position: relative;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* Carrusel horizontal */
 .reviews-carousel {
   max-width: 1200px;
+  width: 95%;
   margin: 0 auto;
   display: flex;
   gap: 2rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 1rem;
+
+  /* Ocultar barra de scroll */
+  scrollbar-width: none; /* Firefox */
+}
+.reviews-carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 .card-review {
@@ -156,6 +159,7 @@
   padding: 2rem;
   text-align: center;
   scroll-snap-align: start;
+  
 }
 
 .avatar-review {
@@ -177,12 +181,13 @@
   font-size: 0.95rem;
   color: var(--color1);
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .shared-photos {
   display: flex;
   gap: 0.5rem;
-  justify-content: center;
+  justify-content: left;
 }
 
 .shared-img {
@@ -190,23 +195,52 @@
   height: 70px;
   border-radius: 6px;
   object-fit: cover;
+  cursor: pointer;
 }
+
+/* Botones carrusel */
+.carousel-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 0, 0, 0);  
+  border: none;
+  font-size: 5rem;
+  cursor: pointer;
+  padding: 0;
+  
+  z-index: 10;
+}
+
+.carousel-btn.prev { left: -2rem; }
+.carousel-btn.next { right: -2rem; }
 
 /* Responsive */
 @media (max-width: 768px) {
-  
-  .container-bodas{
-    padding: 2rem 0rem;
+  .container-bodas,
+  .masonry-gallery
+  {
+    width: 100%;
+    padding: 0 1rem;
   }
-  .container-lugar,
-  .grid-reviews-bodas {
-    padding: 0;
-    max-width: 100%;
+  .carousel-wrapper{
+    width: 90%;
   }
-  .gallery-bodas{
-    padding: 4rem 2rem;
+
+  .masonry-gallery {
+    column-count: 2;
   }
+
   .card-review {
     flex: 0 0 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .masonry-gallery {
+    column-count: 1;
   }
 }

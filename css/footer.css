@@ -105,12 +105,14 @@
   font-weight: bold;
   border-radius: 8px;
   text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: ease 0.3s !important;
 }
 
 .btn-whatsapp-footer:hover {
   background-color: #1ebe5d;
   transform: translateY(-2px);
+  color: #fff !important;
+  transition: ease 0.1s !important;
 }
 
 /* Franja inferior */

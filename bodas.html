@@ -117,14 +117,22 @@
         </div>
     
         <section class="reviews-bodas">
-            <div class="container-bodas">
-                <h2 class="title-bodas">Reseñas Reales</h2>
-                <div class="reviews-carousel">
-                <!-- Aquí se insertarán dinámicamente las reseñas desde el JSON -->
-                </div>
+            <h2 class="title-bodas">Reseñas Reales</h2>
+            <div class="carousel-wrapper">
+              <button class="carousel-btn prev">‹</button>
+              <div class="reviews-carousel">
+                <!-- Las reseñas se insertan dinámicamente desde JSON -->
+              </div>
+              <button class="carousel-btn next">›</button>
             </div>
-        </section>
-    
+          </section>
+          
+          <!-- Lightbox -->
+          <div id="lightbox">
+            <span class="close">&times;</span>
+            <img id="lightbox-img" src="" alt="Imagen ampliada">
+          </div>
+          
     
     </main>
 

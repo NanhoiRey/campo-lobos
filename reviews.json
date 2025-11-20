@@ -17,5 +17,12 @@
       "avatar": "img/user3.jpg",
       "texto": "La música y la iluminación hicieron que la fiesta fuera mágica. ¡Gracias CampoLobos!",
       "fotos": ["img/review3a.jpg", "img/review3b.jpg"]
+    },
+    {
+        
+      "nombre": "Lucía Fernández",
+      "avatar": "img/user3.jpg",
+      "texto": "La música y la iluminación hicieron que la fiesta fuera mágica. ¡Gracias CampoLobos!",
+      "fotos": ["img/review3a.jpg", "img/review3b.jpg"]
     }
   ]

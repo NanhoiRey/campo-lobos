@@ -78,3 +78,22 @@
   background-color: var(--color2);
   transform: translateY(-2px);
 }
+
+@media (max-width: 768px) {
+
+
+  .services-title {
+    font-size: 2rem;
+    color: var(--color1);
+    margin-bottom: 1rem;
+  }
+
+  .services-intro {
+    font-size: 1.1rem;
+    color: var(--color1);
+    margin-bottom: 3rem;
+    width: 90%;
+  
+  }
+
+}

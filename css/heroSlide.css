@@ -92,6 +92,11 @@
   
   /* Responsive ajustes */
   @media (max-width: 768px) {
+    .hero-slider {
+      position: relative;
+      width: 100%;
+      height: 80vh;
+    }
 
     .hero-content {
       position: absolute;

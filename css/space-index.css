@@ -90,4 +90,10 @@
   .spaces-details {
     grid-template-columns: 1fr;
   }
+  .spaces-title {
+    font-size: 2rem;
+    color: var(--color1);
+    margin-bottom: 1rem;
+    
+  }
 }

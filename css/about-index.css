@@ -299,4 +299,35 @@
     justify-content: center;
     align-items: center;
   }
+  .place-section {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding: 3rem 1rem;
+    text-align: center;
+    
+  }
+
+
+/* Texto */
+
+.place-text .title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color1);
+  margin-bottom: 0.5rem;
+}
+
+.place-text .subtitle {
+  font-size: 1.4rem;
+  color: var(--color2);
+  margin-bottom: 1.5rem;
+}
+
+.place-text .description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color2);
+  width: 90%;
+}
 }

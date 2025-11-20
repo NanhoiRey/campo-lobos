@@ -71,6 +71,7 @@
   color: var(--color5);
   text-decoration: none;
   transition: color 0.3s ease;
+  font-weight: normal;
 }
 
 .card-footer a:hover {
@@ -123,6 +124,7 @@
   margin: 0;
   font-size: 0.85rem;
   color: #fff;
+  font-weight: normal;
 }
 
 /* Responsive */

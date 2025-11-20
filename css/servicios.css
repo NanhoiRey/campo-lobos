@@ -120,8 +120,15 @@
 
 /* Responsive ajustes */
 @media (max-width: 768px) {
-  .title-services-main {
-    font-size: 1.8rem;
+  .hero-lugar {
+    padding: 0 2rem;
+  }
+  .hero-title-lugar{
+    font-size: 2rem;
+
+  }
+  .hero-subtitle-lugar{
+    font-size: 1rem;
   }
   .card-service-main {
     padding: 1.5rem 1rem;

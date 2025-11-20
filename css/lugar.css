@@ -102,7 +102,8 @@
 
 @media (max-width: 768px) {
   .hero-lugar {
-    height: 40vh;
+    height: 90vh;
+    padding: 0 2rem;
   }
 
   .hero-title-lugar {
@@ -116,4 +117,17 @@
   .image-lugar {
     width: 100%;
   }
+  .lugar-section-lugar {
+    padding: 2rem;
+    background-color:var(--color5);
+  }
+  
+  .container-lugar {
+    gap: 5rem;
+    padding: 0.5rem 0rem;
+  }
+  .gallery-lugar {
+    gap: 1rem;
+  }
+  
 }

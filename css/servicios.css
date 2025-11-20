@@ -122,10 +122,14 @@
 @media (max-width: 768px) {
   .hero-lugar {
     padding: 0 2rem;
+    height: 90vh;
   }
-  .hero-title-lugar{
-    font-size: 2rem;
 
+  .hero-title-lugar {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+    margin-top: 0%;
+    color: #fff;
   }
   .hero-subtitle-lugar{
     font-size: 1rem;
@@ -134,7 +138,6 @@
     padding: 1.5rem 1rem;
   }
   .container-services-main {
-
     padding: 1rem 0.4rem;
   }
 }

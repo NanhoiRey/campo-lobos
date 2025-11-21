@@ -1,6 +1,6 @@
 .awards-section-awards {
-  background-color: var(--color4); /* fondo claro */
-  padding: 4rem 2rem;
+  background-color: var(--color1); /* fondo claro */
+  padding: 1rem 0rem;
   text-align: center;
 }
 
@@ -44,7 +44,7 @@
 
 .icon-awards {
   font-size: 2rem;
-  color: goldenrod;
+  color: var(--color1);
   margin-bottom: 0.8rem;
 }
 

@@ -76,6 +76,72 @@
   color: var(--color3);
 }
 
+/* 3 Servicios Destacados */
+.servicios-principales {
+  background: var(--color5);
+  
+}
+
+.container-servicios {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title-servicios {
+  font-size: 2.5rem;
+  color: var(--color1);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitle-servicios {
+  font-size: 1.2rem;
+  color: var(--color2);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.servicio-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+}
+
+.servicio-img img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.servicio-content {
+  flex: 1;
+}
+
+.servicio-title {
+  font-size: 1.5rem;
+  color: var(--color1);
+  margin-bottom: 1rem;
+}
+
+.servicio-text {
+  font-size: 1rem;
+  color: var(--color2);
+  line-height: 1.6;
+}
+
+
 /* Grid responsive */
 .grid-services-main {
   display: grid;
@@ -100,7 +166,7 @@
 /* Iconos */
 .icon-service-main {
   font-size: 2rem;
-  color: var(--color3);
+  color: var(--color1);
   margin-bottom: 1rem;
 }
 
@@ -108,7 +174,7 @@
 .card-service-main h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color: var(--color1);
+  color: var(--color2);
 }
 
 /* Texto dentro de las cards */
@@ -139,6 +205,23 @@
   }
   .container-services-main {
     padding: 1rem 0.4rem;
+  }
+
+  /* 3 Servicios */
+
+  .container-servicios {
+    max-width: 1200px;
+    width: 96%;
+    margin: 0 auto;
+  }
+  .servicio-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+  .servicio-img img {
+    width: 100%;
+    height: auto;
   }
 }
 

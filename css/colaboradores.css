@@ -1,0 +1,92 @@
+.empresas-colaboradoras {
+    
+    padding: 4rem 2rem;
+    text-align: left;
+    
+  }
+  
+  .container-empresas {
+    max-width: 1200px;
+    width: 92%;
+    margin: 0 auto;
+
+  }
+  
+  .title-empresas {
+    font-size: 2.5rem;
+    color: var(--color1);
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle-empresas {
+    font-size: 1.2rem;
+    color: var(--color2);
+    margin-bottom: 2rem;
+  }
+  
+  .grid-empresas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .empresa-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .empresa-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+  }
+  
+  .logo-empresa img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 100%;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    border-radius: 0.8rem;
+  }
+  
+  .empresa-info {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .empresa-nombre {
+    font-size: 1.2rem;
+    color: var(--color1);
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .empresa-servicio {
+    font-size: 0.95rem;
+    color: var(--color2);
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .empresa-card {
+      
+      text-align: center;
+    }
+
+  }
+  

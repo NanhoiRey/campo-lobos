@@ -1,84 +1,79 @@
-.awards-section-awards {
-  background-color: var(--color1); /* fondo claro */
-  padding: 1rem 0rem;
+.premios-section {
+  position: relative;
+  padding: 2rem 2rem;
   text-align: center;
+  color: var(--color1);
+  overflow: hidden;
+  
+  /* Fondo con imagen */
+  background: url("/assets/campolobos4.jpg") center/cover no-repeat;
 }
 
-.container-awards {
+/* Capa degradada encima del fondo */
+.premios-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.2));
+  z-index: 0;
+}
+
+/* Contenido por encima del degradado */
+.container-premios {
+  position: relative;
+  z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20%;
 }
 
-.title-awards {
+.title-premios {
   font-size: 2rem;
-  color: var(--color1); /* texto oscuro */
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff; /* texto claro sobre fondo oscuro */
 }
 
-.cards-awards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.premios-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 1.5rem;
+  align-items: center;
 }
 
-.card-awards {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  width: 200px;
-  min-height: 180px;
-  padding: 1.5rem;
+.premio-item {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* contenido centrado horizontal */
-  justify-content: center; /* contenido centrado vertical */
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-awards:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+.premio-item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
 }
 
-.icon-awards {
-  font-size: 2rem;
-  color: var(--color1);
-  margin-bottom: 0.8rem;
-}
-
-.card-title-awards {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--color1);
-  margin-bottom: 0.5rem;
-}
-
-.card-text-awards {
-  font-size: 0.9rem;
-  color: var(--color1);
-  margin-bottom: 0.5rem;
-}
-
-.card-source-awards {
-  font-size: 0.75rem;
-  color: var(--color3);
-  margin-top: auto; /* siempre al pie */
-}
-
-/* Responsive */
+/* Responsive: dos por fila en portátil (tablets/móviles) */
 @media (max-width: 768px) {
-  .cards-awards {
-    gap: 1rem;
+  .premios-grid {
+    grid-template-columns: repeat(3, 1fr); /* 2 por fila */
+    align-items: center;
+    justify-content: center;
   }
-  .card-awards {
-    width: 45%;
+  .premios-section {
+    
+    padding: 4rem 3rem;
+  }
+  .container-premios{
+    padding: 0px;
   }
 }
 
-@media (max-width: 480px) {
-  .card-awards {
-    width: 100%;
+/* Extra pequeño: una por fila */
+@media (max-width: 420px) {
+  .premios-grid {
+    grid-template-columns: 1fr;
   }
 }

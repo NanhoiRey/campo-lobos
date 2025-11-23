@@ -92,3 +92,33 @@ window.addEventListener('click', (e) => {
     lightbox.style.display = 'none';
   }
 });
+
+
+// VIDEO LIGHTBOXconst playBtn = document.querySelector('.play-btn');
+const videoModal = document.getElementById('video-modal');
+const videoPlayer = document.getElementById('video-player');
+const closeVideoBtn = document.querySelector('.close-video');
+
+if (playBtn && videoModal && videoPlayer) {
+  playBtn.addEventListener('click', () => {
+    videoModal.style.display = 'block';
+    document.body.style.overflow = "hidden"; // bloquear scroll detrás
+    videoPlayer.play();
+  });
+
+  closeVideoBtn.addEventListener('click', () => {
+    videoModal.style.display = 'none';
+    document.body.style.overflow = ""; // restaurar scroll
+    videoPlayer.pause();
+    videoPlayer.currentTime = 0;
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === videoModal) {
+      videoModal.style.display = 'none';
+      document.body.style.overflow = "";
+      videoPlayer.pause();
+      videoPlayer.currentTime = 0;
+    }
+  });
+}

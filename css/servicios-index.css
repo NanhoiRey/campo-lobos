@@ -30,11 +30,11 @@
 }
 
 .service-card {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.972);
   border-radius: 12px;
   overflow: hidden;
   backdrop-filter: blur(6px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.202);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: left;
 }
@@ -58,7 +58,7 @@
 
 .service-card p {
   font-size: 0.95rem;
-  color: var(--color3);
+  color: var(--color1);
   margin: 0 1rem 1rem;
 }
 

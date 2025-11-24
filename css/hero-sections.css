@@ -59,10 +59,17 @@
 .hero-servicios {
     background: url("/assets/servicios.jpg") center/cover no-repeat;
 }
+/* Hero de Bodas */
 .hero-bodas {
     background: url("/assets/afuera.jpg");
     background-position: center;
 }
+/* Hero de Eventos */
+.hero-eventos{
+    background: url("/assets/opiniones.jpg");
+    background-position: center;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {

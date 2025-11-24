@@ -310,6 +310,7 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  
   .container-bodas,
   .masonry-gallery
   {
@@ -327,6 +328,9 @@
   .card-review {
     flex: 0 0 85%;
   }
+  .reviews-bodas {
+    background-color: var(--color4);
+    padding: 4rem 0rem;
 }
 
 @media (max-width: 480px) {

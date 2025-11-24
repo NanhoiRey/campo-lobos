@@ -52,6 +52,7 @@
 /* Hero de El Lugar */
 .hero-lugar {
     background: url("/assets/8.jpeg") center/cover no-repeat;
+
 }
 
 /* Hero de Servicios */
@@ -60,6 +61,7 @@
 }
 .hero-bodas {
     background: url("/assets/afuera.jpg");
+    background-position: center;
 }
 
 /* Responsive */

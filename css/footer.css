@@ -188,6 +188,9 @@
     padding:0;
     z-index: 4000;
   }
+  .copyright-footer-map {
+    flex-direction: column;
+  }
   .footer-legales {
     flex-direction: column;
     gap: 0.4rem;

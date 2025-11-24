@@ -1,28 +1,34 @@
 [
     {
-      "nombre": "Juan",
-      "avatar": "assets/bodas/clientes/2025juan1.jpg",
-      "texto": "Nos casamos en Campo Lobos y fue todo increíble. El lugar es hermoso, con mucho verde y un salón abierto que es espectacular. La atención de Monica y su equipo fue excelente desde el primer día y todo salió perfecto. Lo recomendamos 100%.",
-      "fotos": ["assets/bodas/clientes/2025juan2.jpg", "assets/bodas/clientes/2025juan3.jpg"]
+
+      "nombre": "Camila Z.",
+      "avatar": "assets/bodas/clientes/24camiz.webp",
+      "texto": "No podemos estar más felices de cómo salió todo! Fue soñado, más de lo que podemos pedir! Moni es una genia que nos acompañó en todo el proceso, nos ayudó, decoró todo y lo dejó hermoso! Estuvo pendiente de nosotros hasta el último momento! Completamente agradecidos de haberla conocido y que no haya abierto las puertas de su casa para nuestro casamiento!",
+      "fotos": ["assets/bodas/clientes/24camiz.webp","assets/bodas/clientes/24camiz2.webp", "assets/bodas/clientes/24camiz3.webp"]
     },
     {
       "nombre": "Margarita M.",
       "avatar": "assets/bodas/clientes/2024margarita1.webp",
       "texto": "Campolobos es el mejor lugar para una fiesta ,en nuestro caso nos casamos sin palabras… Mónica la dueña del campo es un amor , se convirtió en familia atenta a cada detalle , súper responsable siempre con un mensaje amoroso y con un abrazo cuando más lo necesitaba. Si quieren una fiesta única es acá ! No lo duden !",
-      "fotos": ["assets/bodas/clientes/2024margarita2.webp", "assets/bodas/clientes/2024margarita3.webp"]
+      "fotos": ["assets/bodas/clientes/2024margarita1.webp", "assets/bodas/clientes/2024margarita2.webp", "assets/bodas/clientes/2024margarita3.webp"]
+    },
+    {
+      "nombre": "Elena S.",
+      "avatar": "assets/bodas/clientes/23elenas.webp",
+      "texto": "En campo Lobos tu sueño de un evento hermoso se hace realidad, desde el día 1 Moni fue clara en cuanto a los sí y a los no, ayudando a que todo se desarrolle con facilidad. Nos ayudó en todo lo que estuvo a su alcance. Que decir del lugar, es soñado nos tocó un día hermoso y nuestra Boda fue de cuentos de hadas. Los invitados quedaron alucinados por el lugar, y no dejaron de felicitarnos por la acertada elección del lugar. El cátering y el DJ también recomendados por Campo Lobos fueron un éxito.Nos queda agradecer eternamente a Moni y recomendar fuertemente este espacio tan amorosamente cuidado con detalles de excelencia.",
+      "fotos": ["assets/bodas/clientes/23elenas.webp", "assets/bodas/clientes/23elenas2.webp", "assets/bodas/clientes/23elenas3.webp"]        
+    },
+    {
+      "nombre": "Juan",
+      "avatar": "assets/bodas/clientes/2025juan1.jpg",
+      "texto": "Nos casamos en Campo Lobos y fue todo increíble. El lugar es hermoso, con mucho verde y un salón abierto que es espectacular. La atención de Monica y su equipo fue excelente desde el primer día y todo salió perfecto. Lo recomendamos 100%.",
+      "fotos": ["assets/bodas/clientes/2025juan1.jpg", "assets/bodas/clientes/2025juan2.jpg", "assets/bodas/clientes/2025juan3.jpg"]        
     },
     {
         
-      "nombre": "Lucía Fernández",
-      "avatar": "img/user3.jpg",
-      "texto": "La música y la iluminación hicieron que la fiesta fuera mágica. ¡Gracias CampoLobos!",
-      "fotos": ["img/review3a.jpg", "img/review3b.jpg"]
-    },
-    {
-        
-      "nombre": "Lucía Fernández",
-      "avatar": "img/user3.jpg",
-      "texto": "La música y la iluminación hicieron que la fiesta fuera mágica. ¡Gracias CampoLobos!",
-      "fotos": ["img/review3a.jpg", "img/review3b.jpg"]
+      "nombre": "Leandro G.",
+      "avatar": "assets/bodas/clientes/24leandrog.webp",
+      "texto": "Excelente en todo! Increíble todo. El salón y su Ambientación es perfecto y la atención de Monica un lujo. Les agradecemos por hacernos pasar una de las mejores noches de nuestra vida",
+      "fotos": ["assets/bodas/clientes/24leandrog.webp", "assets/bodas/clientes/24leandrog2.webp", "assets/bodas/clientes/24leandrog3.webp"]
     }
   ]

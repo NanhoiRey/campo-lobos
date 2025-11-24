@@ -121,7 +121,7 @@
 
 .reviews-bodas .title-bodas {
   margin-bottom: 2rem;
-  color: var(--color1);
+  color:var(--color2);
   font-size: 2rem;
 }
 
@@ -152,7 +152,7 @@
 }
 
 .card-review {
-  flex: 0 0 300px;
+  flex: 0 0 45%;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -211,6 +211,7 @@
   font-size: 5rem;
   cursor: pointer;
   padding: 0;
+  color:var(--color1);
   
   z-index: 10;
 }
@@ -235,7 +236,7 @@
   }
 
   .card-review {
-    flex: 0 0 80%;
+    flex: 0 0 85%;
   }
 }
 

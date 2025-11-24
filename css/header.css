@@ -98,13 +98,13 @@ a{
 
 .social-icons a {
   color: var(--color3);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   transition: color 0.3s ease;
   text-decoration: none !important;
 }
 
 .social-icons a:hover {
-  color: var(--color2);
+  color: var(--color5);
 }
 
 /* Hamburguesa con Font Awesome */

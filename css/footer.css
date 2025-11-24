@@ -190,6 +190,7 @@
   }
   .copyright-footer-map {
     flex-direction: column;
+    gap: 1rem;
   }
   .footer-legales {
     flex-direction: column;

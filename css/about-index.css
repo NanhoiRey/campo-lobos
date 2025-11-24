@@ -140,19 +140,17 @@
     text-align: center;
     
   }
-
-
   /* Texto */
 
   .place-text .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: var(--color1);
     margin-bottom: 0.5rem;
   }
 
   .place-text .subtitle {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--color2);
     margin-bottom: 1.5rem;
   }
@@ -161,6 +159,6 @@
     font-size: 1.1rem;
     line-height: 1.6;
     color: var(--color2);
-    width: 90%;
+    width: 100%;
   }
 }

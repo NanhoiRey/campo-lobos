@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  setInterval(changeSlide, 2500);
+  setInterval(changeSlide, 3000);
 });
 
 

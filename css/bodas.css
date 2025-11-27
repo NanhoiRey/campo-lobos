@@ -153,6 +153,91 @@
   object-fit: cover;
 }
 
+.youtube-invite {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.youtube-invite p {
+  font-size: 1.1rem;
+  color: var(--color1);
+  margin-bottom: 1rem;
+  font-weight: bolder;
+}
+
+.btn-youtube {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  background-color:var(--color1); /* rojo YouTube */
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-youtube i {
+  margin-right: 0.5rem;
+}
+
+.btn-youtube:hover {
+  background-color: #cc0000;
+}
+
+.reviews-banner {
+
+  width: 85.5%;
+  margin-top: 3rem;
+  background: #f9f9f9; /* fondo suave */
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  text-align: left;
+  margin:0 auto
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.banner-content i {
+  font-size: 3rem;
+  color: var(--color1); 
+}
+
+.banner-text h3 {
+  font-size: 1.4rem;
+  color: var(--color1);
+  margin-bottom: 0.5rem;
+}
+
+.banner-text p {
+  font-size: 1rem;
+  color: var(--color2);
+}
+
+.btn-google {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  background-color: var(--color1);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-google:hover {
+  background-color:var(--color3);
+}
+
+
+
 /* Responsive */
 @media (max-width: 992px) {
   .videos-grid {
@@ -171,6 +256,15 @@
   .video-item video,
   .video-item iframe {
     height: 200px;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-content i {
+    margin-bottom: 1rem;
   }
 }
 
@@ -320,6 +414,8 @@
   .carousel-wrapper{
     width: 90%;
   }
+  .carousel-btn.prev { left: -1.2rem; }
+  .carousel-btn.next { right: -1.2rem; }
 
   .masonry-gallery {
     column-count: 2;
@@ -331,7 +427,11 @@
   .reviews-bodas {
     background-color: var(--color4);
     padding: 4rem 0rem;
-}
+  }
+  .reviews-banner {
+    padding: 2rem;
+
+  }
 }
 @media (max-width: 480px) {
   .masonry-gallery {

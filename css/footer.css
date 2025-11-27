@@ -123,8 +123,10 @@
   text-align: center;
   padding: 1rem 3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 0.5rem;
+  flex-direction: column;
 }
 
 .copyright-footer-map p {

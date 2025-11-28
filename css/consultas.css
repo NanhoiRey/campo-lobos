@@ -2,7 +2,6 @@
     background-color: var(--color5); /* fondo claro */
     color: var(--color1);            /* textos oscuros */
     padding: 4rem 2rem;
-    font-family: "Raleway", sans-serif;
   }
   
   .container-faq {
@@ -25,7 +24,7 @@
   .accordion-item-faq {
     border-radius: 8px;
     overflow: hidden;
-    background: rgba(0,0,0,0.02); /* fondo muy suave */
+    background: rgb(255, 255, 255); /* fondo muy suave */
     box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* sombra ligera en lugar de borde oscuro */
     transition: box-shadow 0.3s ease;
   }
@@ -48,6 +47,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-align: left;
+    font-weight: 500;
   }
   
   .accordion-header-faq:hover {

@@ -47,3 +47,16 @@ body {
   transform: scale(1.1);
   background-color: #1ebe5d;
 }
+
+/* Estado inicial oculto */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Estado visible */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

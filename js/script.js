@@ -38,6 +38,29 @@ document.addEventListener("DOMContentLoaded", () => {
           document.body.style.overflow = "";
         });
 
+        // ✅ Cerrar menú al hacer clic en cualquier enlace
+        const navItems = navLinks.querySelectorAll("a");
+        navItems.forEach(link => {
+          link.addEventListener("click", (e) => {
+            // Scroll suave hacia la sección
+            const href = link.getAttribute("href");
+            if (href && href.startsWith("#")) {
+              e.preventDefault();
+              const target = document.querySelector(href);
+              if (target) {
+                target.scrollIntoView({ behavior: "smooth", block: "start" });
+              }
+            }
+
+            // Cerrar menú
+            navLinks.classList.remove("active");
+            overlay.classList.remove("active");
+            hamburger.classList.remove("fa-times");
+            hamburger.classList.add("fa-bars");
+            document.body.style.overflow = "";
+          });
+        });
+
         // Scroll effect en desktop
         window.addEventListener("scroll", () => {
           if (window.scrollY > 50) {
@@ -50,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
+  // Cargar componentes
   loadComponent("#header", "components/header.html");
   loadComponent("#footer", "components/footer.html");
 
@@ -64,13 +88,29 @@ document.addEventListener("DOMContentLoaded", () => {
       current = (current + 1) % slides.length;
     }
   };
-
   setInterval(changeSlide, 3000);
 });
 
+// ANIMACION CONTENIDO
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".fade-in");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // opcional: solo animar una vez
+      }
+    });
+  }, { threshold: 0.2 }); // se dispara cuando el 20% es visible
+
+  elements.forEach(el => observer.observe(el));
+});
+
+
+
 
 // LIGHTBOX
-
 const galleryItems = document.querySelectorAll('.gallery-item img');
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
@@ -93,8 +133,8 @@ window.addEventListener('click', (e) => {
   }
 });
 
-
-// VIDEO LIGHTBOXconst playBtn = document.querySelector('.play-btn');
+// VIDEO LIGHTBOX
+const playBtn = document.querySelector('.play-btn');
 const videoModal = document.getElementById('video-modal');
 const videoPlayer = document.getElementById('video-player');
 const closeVideoBtn = document.querySelector('.close-video');
